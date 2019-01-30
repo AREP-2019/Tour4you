@@ -9,6 +9,8 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.inject.Inject;
 import java.util.List;
 
 @RestController
@@ -17,8 +19,13 @@ public class ConnectorTwitter implements Connector {
 
     public static final String TWITTER_BASE_URI= "svc/v1/tweets";
 
-    @Autowired
+
     private Twitter twitter;
+
+    @Inject
+    public ConnectorTwitter(Twitter twitter) {
+        this.twitter = twitter;
+    }
 
 
     @RequestMapping(value ="{hashtag", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
