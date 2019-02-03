@@ -34,24 +34,20 @@
 
         <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-twitter -->
 
+        <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-core -->
         <dependency>
-            <groupId>org.springframework.social</groupId>
-            <artifactId>spring-social-core</artifactId>
-            <version>1.1.2.RELEASE</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-twitter -->
-        <dependency>
-            <groupId>org.springframework.social</groupId>
-            <artifactId>spring-social-twitter</artifactId>
-            <version>1.1.2.RELEASE</version>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j-core</artifactId>
+            <version>4.0.7</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j -->
         <dependency>
-            <groupId>org.springframework.social</groupId>
-            <artifactId>spring-social-web</artifactId>
-            <version>1.1.2.RELEASE</version>
+            <groupId>org.twitter4j</groupId>
+            <artifactId>twitter4j</artifactId>
+            <version>4.0.7</version>
+            <type>pom</type>
         </dependency>
-
 
 
 
